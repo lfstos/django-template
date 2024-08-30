@@ -4,10 +4,10 @@ Nessa para se encontra os arquivos do projeto em Django.
 
 Será usando o Poetry como gestor de pacotes.
 
-Por isso, para instalar o projeto, dentro da pasta backend rode
+Por isso, para instalar o projeto com a s dependências de desenvolvimento rode, dentro da pasta backend rode
 
 ```bash
-poetry install --sync
+poetry install with dev
 ```
 
 Para para rodar seu servidor django ative o ambiente virtual:
