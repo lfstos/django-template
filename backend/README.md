@@ -21,3 +21,13 @@ Então rode
 ```bash
 python mananage.py runserver
 ```
+
+## Padrão de código
+
+Para o backend esse projeto usa o flake8, com as seguintes customizações.
+
+Tamanho de linha poder ter até 120 caracteres. Para ver o relatório do linter rode
+
+```bash
+flake8 .
+```
