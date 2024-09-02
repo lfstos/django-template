@@ -37,3 +37,9 @@ flake8 .
 Nesse projeto o usuário foi customizado. Ele não tem username nem last_name como o usuário padrão do Django.
 Ele usa o email como identificador único. O usuário se encontra na app base para que você possa acrescentar 
 campos de acordo com sua necessidade.
+
+## Configurações de instância
+
+Para ler configurações de instânca, esse projeto usa a lib [python decouple](https://pypi.org/project/python-decouple/).
+
+Ela é importada no arquivo settings.py
