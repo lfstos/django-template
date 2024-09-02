@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             field=models.ManyToManyField(
                 blank=True,
                 help_text=(
-                    'The groups this user belongs to.' 
+                    'The groups this user belongs to.'
                     'A user will get all permissions granted to each of their groups.'
                 ),
                 related_name='user_set',
@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
             field=models.BooleanField(
                 default=True,
                 help_text=(
-                    'Designates whether this user should be treated as active.' 
+                    'Designates whether this user should be treated as active.'
                     'Unselect this instead of deleting accounts.'),
                 verbose_name='active'),
         ),
