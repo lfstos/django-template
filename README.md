@@ -8,6 +8,6 @@ Template de projeto Django com as boas práticas de desenvolvimento de software
 
 ## Pastas do projeto
 
-Na pasta raiz se encontra a pasta backend. Dentro dela se encontra os arquivos respectivos ao backend feito em Django
-
-## Poetry
+1. Na pasta raiz se encontram: a pasta backend. Dentro dela se encontra os arquivos respectivos ao backend feito em Django
+2. A pasta docker. Nela se encontram os arquivos de containerização usando docker.
+3. A pasta config. Nela se encontra um arquivo de configuração para o projeto.
