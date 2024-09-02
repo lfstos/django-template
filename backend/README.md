@@ -31,3 +31,9 @@ Tamanho de linha poder ter até 120 caracteres. Para ver o relatório do linter 
 ```bash
 flake8 .
 ```
+
+# Usuário padrão
+
+Nesse projeto o usuário foi customizado. Ele não tem username nem last_name como o usuário padrão do Django.
+Ele usa o email como identificador único. O usuário se encontra na app base para que você possa acrescentar 
+campos de acordo com sua necessidade.
