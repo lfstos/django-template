@@ -11,3 +11,7 @@ Para rodar, navegue até o diretório  docker e rode o comando:
 ```bash
 docker compose up -d
 ```
+
+Por padrão ao rodar em ambiente local também está sendo usado o nginx rodando na porta 80.
+Ele funciona como proxy reverso para aplicação Django rodando na porta 8000.
+E também serve os estáticos gerados peo Django.
