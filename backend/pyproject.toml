@@ -1,26 +1,28 @@
 [tool.poetry]
-name = "django-template"
+name = "backend"
 version = "0.1.0"
-description = "Template de projeto Django com as boas práticas de desenvolvimento de software"
+description = ""
 authors = ["Luiz Fernando <luiz-fernando@outlook.com>"]
 readme = "README.md"
 
-
 [tool.poetry.dependencies]
-python = "^3.11"
-django = "^5.1"
-psycopg2 = "^2.9.9"
+python = "^3.12"
+django = "^5.1.1"
 dj-database-url = "^2.2.0"
 python-decouple = "^3.8"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.2"
-pytest-django = "^4.8.0"
-flake8 = "^7.1.1"
+psycopg2 = "^2.9.9"
+django-storages = {extras = ["s3"], version = "^1.14.4"}
+collectfast = "^2.2.0"
+pytest = "^8.3.3"
+pytest-django = "^4.9.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "core.settings"
-python_files = ["test*.py", "*test.py", "testing/python/*.py"]
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+pytest = "^8.3.2"
+pytest-django = "^4.9.0"
 
 [build-system]
 requires = ["poetry-core"]
