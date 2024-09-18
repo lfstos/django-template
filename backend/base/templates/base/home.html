@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+
+{% block title %}Página de Template Django{% endblock title %}
+
+{% block body %}
+    <h1>Página de Template Django</h1>
+    <p> Essa página pode ser alterada de acordo com a home do seu projeto</p>
+    <h2>Login</h2>
+    <p>Esse projeto jpa veio com login do Django configurado</p>
+    {% if request.user.is_authenticated %}
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Sair">
+        </form>    
+    {% else %}
+        <a href="{% url 'login' %}">Página de Login</a>
+    {% endif %}
+{% endblock body %}
