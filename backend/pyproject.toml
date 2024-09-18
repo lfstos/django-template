@@ -15,6 +15,7 @@ django-storages = {extras = ["s3"], version = "^1.14.4"}
 collectfast = "^2.2.0"
 pytest = "^8.3.3"
 pytest-django = "^4.9.0"
+pillow = "^10.4.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "core.settings"

@@ -1,6 +1,6 @@
 import pytest
 from django.contrib.auth import get_user_model
-from base.models import UserManager
+from base.manager import UserManager
 
 
 def test_user_has_customized_manager_instance():
