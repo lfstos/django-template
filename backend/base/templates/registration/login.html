@@ -2,11 +2,12 @@
 
 {% block title %}Página de Login{% endblock title %}
 
-{% block body %}
+{% block content %}
     <h1>Página de Login</h1>
     <form action="{% url 'login' %}" method='post'>
         {% csrf_token %}
         {{form.as_p }}
         <input type="submit" value="Logar">
     </form>
-{% endblock body %}
+    <a href="{% url "password_reset" %}">Esqueceu a senha</a>
+{% endblock content %}
