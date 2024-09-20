@@ -2,7 +2,7 @@
 
 {% block title %}Página de Template Django{% endblock title %}
 
-{% block body %}
+{% block content %}
     <h1>Página de Template Django</h1>
     <p> Essa página pode ser alterada de acordo com a home do seu projeto</p>
     <h2>Login</h2>
@@ -12,7 +12,8 @@
             {% csrf_token %}
             <input type="submit" value="Sair">
         </form>    
+        <a href="{% url 'password_change' %}">Alterar senha</a>            
     {% else %}
         <a href="{% url 'login' %}">Página de Login</a>
     {% endif %}
-{% endblock body %}
+{% endblock content %}
