@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('', include('base.urls'))
+    path('', include('core.base.urls'))
 ]
 
 if settings.AWS_STORAGE_BUCKET_NAME == '':

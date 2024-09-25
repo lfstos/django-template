@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.db import models
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
-from base.manager import UserManager
+from core.base.manager import UserManager
 
 
 class MinAbstractUser(AbstractBaseUser, PermissionsMixin):
