@@ -46,6 +46,16 @@ Então se recomenda usar. Para rodar sessão shell interativa
 python manage.py shell_plus --print-sql
 ```
 
+# Testes com Cobertura
+
+Foi utilizado o [pytest-coverage](https://pytest-cov.readthedocs.io/en/latest/) que produz um relatório de cobertura.
+Foi instalado no grupo de desenvolvimento.
+
+```bash
+poetry add -G dev pytest-cov
+pytest --cov=base/
+```
+
 # Usuário padrão
 
 Nesse projeto o usuário foi customizado. Ele não tem username nem last_name como o usuário padrão do Django.
