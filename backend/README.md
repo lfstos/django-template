@@ -56,6 +56,8 @@ poetry add -G dev pytest-cov
 pytest --cov=base/
 ```
 
+# Django Toolbar
+
 # Usuário padrão
 
 Nesse projeto o usuário foi customizado. Ele não tem username nem last_name como o usuário padrão do Django.

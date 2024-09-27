@@ -21,14 +21,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('BACKEND_SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('BACKEND_DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
+
+# TODO: Verificar porque o DEBUG não está sendo ligo da variável de ambiente
 
 AUTH_USER_MODEL = "base.User"
 
-ALLOWED_HOSTS = config('BACKEND_ALLOWED_HOSTS', default='', cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='', cast=Csv())
 
 
 # Application definition
@@ -87,7 +89,6 @@ DATABASES = {
     )
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -121,6 +122,9 @@ USE_TZ = True
 
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    INTERNAL_IPS = ("127.0.0.1",)
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.append('debug_toolbar.middleware.DebugToolbarMiddleware')
 
 
 # Static files (CSS, JavaScript, Images)
